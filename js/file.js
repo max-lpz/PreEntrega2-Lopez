@@ -39,14 +39,15 @@ let pedirProducto = () => {
             productoElegido = productos.find((producto) => producto.id === idProd)
         }
         return productoElegido
-    } else {
+    } else if ((idProd === 0) || (idProd === null)) {
         alert('Adios, gracias por si visita')
     }
 }
-
 let producto = pedirProducto()
 resultado.push(producto)
 resultado.forEach((producto) => {
     mensaje += `El producto: ${producto.nombre} tiene un costo de: $${producto.costo}\n`
 })
 alert(mensaje)
+
+
