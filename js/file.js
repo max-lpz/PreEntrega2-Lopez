@@ -1,24 +1,24 @@
 let productos = [
     {
-        id: "1",
+        id: 1,
         nombre: "Celular",
         marca: "iPhone",
         costo: 150000,
     },
     {
-        id: "2",
+        id: 2,
         nombre: "Bicicleta",
         marca: "BMX",
         costo: 80000,
     },
     {
-        id: "3",
+        id: 3,
         nombre: "Carpa",
         marca: "Montagne",
         costo: 360000,
     },
     {
-        id: "4",
+        id: 4,
         nombre: "Accesorios",
         marca: "Deco",
         costo: 5000,
