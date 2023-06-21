@@ -30,12 +30,13 @@ let mensaje = ""
 let idProd = 0
 
 let pedirProducto = () => {
-    idProd = prompt("¿Qué producto desea ver?\n1-Celular\n2-Bicicleta\n3-Carpa\n4-Accesorios\n0-Salir")
+    idProd = parseInt(prompt("¿Qué producto desea ver?\n1-Celular\n2-Bicicleta\n3-Carpa\n4-Accesorios\n0-Salir"))
     if (idProd != 0) {
         let productoElegido = productos.find((producto) => producto.id === idProd)
         while (!productoElegido) {
             alert("Producto no encontrado.")
-            idProd = prompt("¿Qué producto desea ver?\n1-Celular\n2-Bicicleta\n3-Carpa\n4-Accesorios\n0-Salir")
+            idProd = parseInt(prompt("¿Qué producto desea ver?\n1-Celular\n2-Bicicleta\n3-Carpa\n4-Accesorios\n0-Salir"))
+            productoElegido = productos.find((producto) => producto.id === idProd)
         }
         return productoElegido
     } else {
